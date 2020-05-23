@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>preston.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/benLogo.png" alt="ben preston">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html#home">Home</a></li>
+                <li class="nav__item"><a href="index.html#services">Services</a></li>
+                <li class="nav__item"><a href="index.html#about">About</a></li>
+                <li class="nav__item"><a href="index.html#work">Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi I am <strong>Ben Preston</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">
+            front-end dev
+        </p>
+        <img src="images/benOnWall.jpg" class="intro__image" alt="Ben Preston on holiday">
+    </section>
+
+    <!-- My services -->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">
+            What I do
+        </h2>
+        <div class="services">
+            <div class="service">
+                <h3>Thing one</h3>
+                <p>ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus magni, nam quidem quas deleniti facilis pariatur fugiat et sunt temporibus laudantium, impedit, provident maxime aperiam in blanditiis dolores. Natus, illum!</p>
+            </div>
+            <div class="service">
+                <h3>Thing two</h3>
+                <p>ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus magni, nam quidem quas deleniti facilis pariatur fugiat et sunt temporibus laudantium, impedit, provident maxime aperiam in blanditiis dolores. Natus, illum!</p>
+            </div>
+            <div class="service">
+                <h3>Thing three</h3>
+                <p>ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus magni, nam quidem quas deleniti facilis pariatur fugiat et sunt temporibus laudantium, impedit, provident maxime aperiam in blanditiis dolores. Natus, illum!</p>
+            </div>
+        </div>
+
+        <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!-- About Me -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">About Me</h2>
+        <p class="section__subtitle section__subtitle--about">
+             JavaScript Developer from London based in Madrid
+        </p>
+        <div class="about-me__body">
+            <p>Hi I'm Ben. I love building stuff. I spent about ten years in the not for profit world and now I build websites</p>
+        </div>
+        <img src="images/benAndLevi.jpg" class="about-me__img" alt="Ben killing it">
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+        <h2 class="section__title">My work</h2>
+        <p class="section__subtitle">
+            ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi excepturi, magnam aut modi perspiciatis nostrum hic suscipit veritatis error odio voluptate vel dolore aperiam, facere laudantium ex quis eligendi aliquam?
+        </p>
+        <div class="portfolio">
+            <!-- Item 1 -->
+            <a href="#" class="portfolio__item">
+                <img src="images/benBotLogoLarge.png" alt="" class="portfolio__img">
+            </a>
+
+            <!-- item 2 -->
+            <a href="#" class="portfolio__item">
+                <img src="images/benBotLogoLarge.png" alt="" class="portfolio__img">
+            </a>
+            <!-- item 3 -->
+            <a href="#" class="portfolio__item">
+                <img src="images/benBotLogoLarge.png" alt="" class="portfolio__img">
+            </a>
+            <!-- item 4 -->
+            <a href="#" class="portfolio__item">
+                <img src="images/benBotLogoLarge.png" alt="" class="portfolio__img">
+            </a>
+            <!-- item 5 -->
+            <a href="#" class="portfolio__item">
+                <img src="images/benBotLogoLarge.png" alt="" class="portfolio__img">
+            </a>
+            <!-- item 6 -->
+            <a href="#" class="portfolio__item">
+                <img src="images/benBotLogoLarge.png" alt="" class="portfolio__img">
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <a href="mailto:test@email.com" class="footer-link">test@email.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a href="linkedin" class="social-list__link">
+                    <i class="fab fa-linkedin"></i> 
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="linkedin" class="social-list__link">
+                    <i class="fab fa-github"></i> 
+                </a>
+            </li>
+
+        </ul>
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
