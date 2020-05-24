@@ -1,0 +1,101 @@
+:root {
+    --ff-primary: 'Roboto Mono', monospace;
+    --ff-secondary: 'Roboto Mono', monospace; 
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-light: #fff;
+    --clr-dark: #0812A1;
+    --clr-accent: #2C8C99; 
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+}
+
+
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--clr-dark);
+    overflow: hidden;
+}
+
+.nav__list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav__list .nav__item {
+    list-style: none;
+}
+
+.nav__list .nav__item:before {
+    content: attr(data-text);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 6em;
+    font-weight: 700;
+    pointer-events: none;
+    opacity: 0;
+    letter-spacing: 20px;
+    transition: 0.5s;
+    white-space: nowrap;
+}
+
+.nav__list .nav__item:hover:before {
+    opacity: 0.05;
+    letter-spacing: 20px;
+}
+
+.nav__list .nav__item a {
+    position: relative;
+    display: inline-block;
+    padding: 6px 15px;
+    text-decoration: none;
+    background: var(--clr-quiet);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.nav__list:hover .nav__item a {
+    opacity: 0;
+}
+
+.nav__list .nav__item a:hover {
+    transform: scale(1.4);
+    z-index: 1000;
+    background: var(--clr-accent);
+    opacity: 1;
+}
+
+.nav__list .nav__item a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: 80px;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent);
+    transform: skewX(35deg);
+    transition: 0s;
+}
+
+.nav__list .nav__item a:hover:before {
+    left: calc(100% + 100px);
+    transition: 0.5s;
+    transition-delay: 0.2s;
+}

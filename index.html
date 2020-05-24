@@ -6,10 +6,11 @@
     <title>preston.com</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/projectContainer.css">
     <!-- Typography -->
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/burgerBar.css">
 </head>
 <body>
     <header>
@@ -21,10 +22,13 @@
         </button>
         <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__item"><a href="index.html#home">Home</a></li>
-                <li class="nav__item"><a href="index.html#services">Services</a></li>
-                <li class="nav__item"><a href="index.html#about">About</a></li>
-                <li class="nav__item"><a href="index.html#work">Work</a></li>
+                <li data-text="Home" class="nav__item"><a href="index.html#home">Home</a></li>
+                <li data-text="My Work" class="nav__item"><a href="index.html#work">My Work</a></li>
+                <li data-text="About" class="nav__item"><a href="index.html#about">About Me</a></li>
+          
+                <li data-text="Programming Languages" class="nav__item"><a href="index.html#languages">Programming Languages</a></li>
+                
+             
             </ul>
         </nav>
     </header>
@@ -43,27 +47,56 @@
         <!-- <img src="images/benBigHead.jpg" class="intro__image" alt="Ben Preston on holiday"> -->
     </section>
 
-    <!-- My services -->
-    <section class="my-services" id="services">
-        <h2 class="section__title section__title--services">
-            Programming Languages
-        </h2>
-        <div class="services">
-            <div class="service">
-                <h3>JavaScript</h3>
-                <p>I've been working professionally with JavaScript since 2018 after completing a full stack bootcamp in it. I love the flexibility of it as a language whether it's building something on canvas, using the backend via node, or implementing one of the frameworks like react.</p>
+     <!-- My Work -->
+     <section class="my-work" id="work">
+        <h2 class="section__title">My work</h2>
+        <p class="section__subtitle section__subtitle--work">
+            Below is a selection of some projects I've worked on. Feel free to ask if you'd like to know more.
+        </p>
+        <div class="container">
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img class="card-img" src="./images/benBotLogoLarge.png">
+                        <h3>BenBot</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>JS and Rivescript bot that gives information on me, my work history and interests</p>
+                        <a href="#">See GitHub repo</a>
+                    </div>
+                </div>
             </div>
-            <div class="service">
-                <h3>HTML</h3>
-                <p>Although I mostly code in JavaScript it's important to keep strong fundamentals of HTML which is why I made this site without any JS ... well except the hamburger bar</p>
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img class="card-img" src="./images/nysl_logo_yellow.png">
+                        <h3>NYSL Football App</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Local football club app that tracks scores and performance of a local sports league</p>
+                        <a href="#">See GitHub repo</a>
+                    </div>
+                </div>
             </div>
-            <div class="service">
-                <h3>CSS</h3>
-                <p>I love the flexibility and placefulness of CSS whether it's making stupid animations or using fun effects like transitions to really showcase the power of the web</p>
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img class="card-img" src="./images/gitHubForkIcon.png">
+                        <h3>GitHub User Finder</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>GitHub lookup that finds information on a given users</p>
+                        <a href="#">See GitHub repo</a>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <a href="#work" class="btn">My Work</a>
     </section>
 
     <!-- About Me -->
@@ -91,43 +124,31 @@
                 I managed a large team of people and I hold a masters degree (MSc) in Management as well as a bachelor's degree in Mathematics (BSc).
             </p>
         </div>
-        <img src="images/benAndLevi.jpg" class="about-me__img" alt="Ben killing it">
+        <img src="images/benLogo.png" class="about-me__img" alt="Ben killing it">
     </section>
 
-    <!-- My Work -->
-    <section class="my-work" id="work">
-        <h2 class="section__title">My work</h2>
-        <p class="section__subtitle section__subtitle--work">
-            Below is a selection of some projects I've worked on. Feel free to ask if you'd like to know more.
-        </p>
-        <div class="portfolio">
-            <!-- Item 1 -->
-            <a href="#" class="portfolio__item">
-                <img src="images/benBotLogoLarge.png" alt="" class="portfolio__img">
-            </a>
-
-            <!-- item 2 -->
-            <a href="#" class="portfolio__item">
-                <img src="images/benBotLogoLarge.png" alt="" class="portfolio__img">
-            </a>
-            <!-- item 3 -->
-            <a href="#" class="portfolio__item">
-                <img src="images/benBotLogoLarge.png" alt="" class="portfolio__img">
-            </a>
-            <!-- item 4 -->
-            <a href="#" class="portfolio__item">
-                <img src="images/benBotLogoLarge.png" alt="" class="portfolio__img">
-            </a>
-            <!-- item 5 -->
-            <a href="#" class="portfolio__item">
-                <img src="images/benBotLogoLarge.png" alt="" class="portfolio__img">
-            </a>
-            <!-- item 6 -->
-            <a href="#" class="portfolio__item">
-                <img src="images/benBotLogoLarge.png" alt="" class="portfolio__img">
-            </a>
-        </div>
-    </section>
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">
+                Programming Languages
+            </h2>
+            <div class="services">
+                <div class="service">
+                    <h3>JavaScript</h3>
+                    <p>I've been working professionally with JavaScript since 2018. I've worked for one of the worlds biggest online publishers to build beautiful responsive sites. I love how adaptable JS is whether canvas, node, or react.</p>
+                </div>
+                <div class="service">
+                    <h3>HTML</h3>
+                    <p>Although I mostly code in JavaScript it's important to keep strong fundamentals of HTML which is why I made this site without any JS ... well except the hamburger bar</p>
+                </div>
+                <div class="service">
+                    <h3>CSS</h3>
+                    <p>I love the flexibility and placefulness of CSS whether it's making stupid animations or using fun effects like transitions to really showcase the power of the web</p>
+                </div>
+            </div>
+    
+            <a href="#work" class="btn">My Work</a>
+        </section>
 
     <footer class="footer">
         <a href="mailto:hi@benpreston.com" class="footer-link">hi@benpreston.com</a>
