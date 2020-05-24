@@ -5,15 +5,15 @@
 }
 
 :root {
-    --ff-primary: 'Source Sans Pro', sans-serif;
-    --ff-secondary: 'Source Sans Pro', monospace; 
+    --ff-primary: 'Roboto Mono', monospace;
+    --ff-secondary: 'Roboto Mono', monospace; 
 
     --fw-reg: 300;
     --fw-bold: 900;
 
     --clr-light: #fff;
-    --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-dark: #0812A1;
+    --clr-accent: #2C8C99; 
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -253,13 +253,6 @@ header {
         grid-template-columns: min-content max-content;
     }
 
-    .intro__image {
-        grid-area: img;
-        min-width: 250px;
-        position: relative;
-        z-index: 2;
-    }
-
     .section__subtitle--intro {
         align-self: start;
         grid-column: -1 / 1;
@@ -269,6 +262,21 @@ header {
         left: -1.5em;
         width: calc(100% + 1.5em);
     }
+
+
+.intro__image {
+    grid-area: img;
+    z-index: 2;
+    position: relative;
+    background-image: url(./images/benBigHead.jpg);
+    min-width: 250px;
+    min-height: 280px;
+    background-size: cover
+}
+
+.intro__image:hover {
+    background-image: url(./images/benBigHead2.jpg);
+}
 }
 
 /* My services section */
@@ -371,7 +379,7 @@ header {
 }
 
 .section__subtitle--work {
-    color: var(--clr-dark);
+    color: var(--clr-light);
     font-weight: var(--fw-bold);
     margin-bottom: 2em;
 }
