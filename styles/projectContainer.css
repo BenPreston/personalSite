@@ -3,6 +3,8 @@
 .card-img {
     max-width: 150px;
     max-height: 150px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container {
@@ -17,6 +19,7 @@
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
 }
 
 
